@@ -909,7 +909,7 @@ function renderProgrammeStatus(){
   const people=names.length?`<div class="ongoing-participants"><div class="ongoing-participants-title">PARTICIPANTS · ${names.length}</div><ol>${names.map(n=>`<li>${esc(n)}</li>`).join('')}</ol></div>`:(isOngoing?'<p class="ongoing-participants-empty">Participant names have not been linked to this programme yet. Check that the programme name matches the event name in “Participants & names”.</p>':'');
   return `<div class="status-programme-item"><strong>${esc(x.event)}</strong><span>${esc(cfg.festivalDays?.[x.day]||('DAY '+x.day))}${x.time?' · '+esc(x.time):''}</span>${x.detail?`<small>${esc(x.detail)}</small>`:''}${people}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">WATCH LIVE ↗</a>`:''}</div>`;
  };
- $("#ongoingProgramme").innerHTML=ongoing.length?ongoing.map(x=>card(x,true)).join(""):'<p class="status-empty">No programme has been marked as ongoing yet.</p>';
+ $("#ongoingProgramme").innerHTML=ongoing.length?ongoing.map(x=>card(x,true)).join(""):'<p class="status-empty">qir'ath </p>';
  $("#upcomingProgramme").innerHTML=upcoming.length?upcoming.map(x=>card(x,false)).join(""):'<p class="status-empty">Upcoming programmes will appear here when selected in the editor.</p>';
 }
 function renderParticipants(q=""){
